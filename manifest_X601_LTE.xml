@@ -5,8 +5,8 @@
 	
 	<remove-project name="LineageOS/android_packages_apps_AudioFX" />
 	
-	<project path="device/Infinix/X601_LTE" name="android_device_Infinix_X601_LTE" revision="master" remote="cod3r"/>
-	<project path="vendor/Infinix/X601_LTE" name="android_vendor_Infinix_X601_LTE" revision="master" remote="cod3r"/>
+	<project path="device/Infinix/X601" name="android_device_Infinix_X601" revision="master" remote="cod3r"/>
+	<project path="vendor/Infinix/X601" name="android_vendor_Infinix_X601" revision="master" remote="cod3r"/>
 
 	<project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
 	<project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />

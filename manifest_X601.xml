@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="opengapps" fetch="https://github.com/opengapps/"  />
 	<remote name="cod3r" fetch="https://github.com/nasreirma/" />
 	
 	<remove-project name="LineageOS/android_packages_apps_AudioFX" />
 	
-	<project path="device/Infinix/X601" name="android_device_Infinix_X601" revision="master" remote="cod3r"/>
-	<project path="vendor/Infinix/X601" name="android_vendor_Infinix_X601" revision="master" remote="cod3r"/>
+	<project path="device/Infinix/X601" name="test" revision="master" remote="master"/>
+	<project path="vendor/Infinix/X601" name="3.18.35-vendor-blobs" revision="master" remote="master"/>
+        <remote name="opengapps" fetch="https://github.com/opengapps/"  />
 
-	<project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
-	<project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
-	<project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
-	<project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps" />
+        <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+        <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
+
+        <!-- arm64 depends on arm -->
+        <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
+        <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps" />
+
+        <project path="vendor/opengapps/sources/x86" name="x86" clone-depth="1" revision="master" remote="opengapps" />
+        <project path="vendor/opengapps/sources/x86_64" name="x86_64" clone-depth="1" revision="master" remote="opengapps" />
+	
 </manifest>

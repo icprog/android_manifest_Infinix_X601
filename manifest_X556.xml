@@ -2,7 +2,7 @@
 <manifest>
 	<remote name="LineageOS-14.1" fetch="https://github.com/nasreirma/" />
 		
-	<project path="device/Infinix/X556" name="android_device_Infinix_X556" revision="LineageOS-14.1" remote="LineageOS-14.1"/>
+	<project path="device/Infinix/X556" name="android_device_Infinix_X556" revision="LineageOS-14.1" remote="viper"/>
 	<project path="vendor/Infinix/X556" name="android_vendor_Infinix_X556" revision="LineageOS-14.1" remote="LineageOS-14.1"/>
         <remote name="opengapps" fetch="https://github.com/opengapps/"  />
 
